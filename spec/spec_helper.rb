@@ -1,6 +1,7 @@
 # -*- encoding : utf-8 -*-
 require 'rubygems'
 require 'ostruct'
+require 'logger'
 
 $:.push File.expand_path('../../lib', __FILE__)
 
