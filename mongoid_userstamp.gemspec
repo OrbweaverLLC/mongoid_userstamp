@@ -16,11 +16,11 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ['lib']
 
-  s.post_install_message = File.read('UPGRADING') if File.exists?('UPGRADING')
+  s.post_install_message = File.read('UPGRADING') if File.file?('UPGRADING')
 
   s.add_runtime_dependency 'mongoid', '>= 3.0.4'
   s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec', '~> 3.0.0'
+  s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'yard'
   s.add_development_dependency 'gem-release'
   s.add_development_dependency 'request_store'
